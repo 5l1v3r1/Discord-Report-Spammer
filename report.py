@@ -19,7 +19,7 @@ git = f'{wht}                      https://github.com/Problematik1'
 #----------------------------------------
 print(f'{xz}{Fore.RED}{logo}')
 print(f'{Fore.RED}{git}')
-token = open("token.txt", "r").read().splitlines()
+token = open("token.txt", "r").read()
 guild = input(f'\n{clr}{wht}Guild ID{res}{wht} > ')
 channel = input(f'\n{clr}{wht}Channel ID{res}{wht} > ')
 msg = input(f'\n{clr}{wht}Message ID{res}{wht} > ')
@@ -41,13 +41,14 @@ elif reason == '4':
 elif reason == '5':
     reason = 4                
 
+print(token)
 headers = {
  "Accept": "*/*",
  "Accept-Encoding": "gzip, deflate, br",
  "Accept-Language": "en-GB",
  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) discord/1.0.42 Chrome/91.0.4472.164 Electron/13.4.0 Safari/537.36",
  "Content-Type": "application/json",
- "Authorization": f"{token}"
+ "authorization": f"{token}"
         }
 json = {"channel_id": channel, "message_id": msg, "guild_id": guild, "reason": reason}
 url = 'https://discordapp.com/api/v9/report'
