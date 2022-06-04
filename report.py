@@ -47,7 +47,7 @@ headers = {
  "Accept-Language": "en-GB",
  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) discord/1.0.42 Chrome/91.0.4472.164 Electron/13.4.0 Safari/537.36",
  "Content-Type": "application/json",
- "Authorization": token
+ "Authorization": f"{token}"
         }
 json = {"channel_id": channel, "message_id": msg, "guild_id": guild, "reason": reason}
 url = 'https://discordapp.com/api/v9/report'
