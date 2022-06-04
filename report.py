@@ -41,7 +41,6 @@ elif reason == '4':
 elif reason == '5':
     reason = 4                
 
-print(token)
 headers = {
  "Accept": "*/*",
  "Accept-Encoding": "gzip, deflate, br",
