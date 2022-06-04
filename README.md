@@ -1,8 +1,8 @@
 # Discord-Report-Spammer
 Discord Report Spammer
 
-
-```Установка
+Установка:
+```
 pip install requests
 pip install colorama
 pip install pystyle
